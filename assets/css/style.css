@@ -19,6 +19,10 @@ main{
 
 /* Form Style */
 
+fieldset{
+    border-radius: 5px;
+}
+
 section{
     display: flex;
     flex-direction: column;
