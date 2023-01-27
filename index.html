@@ -22,23 +22,25 @@
                 </section>
                 <section>
                     <h2>Art der Veranlagung</h2>
-                    <label for="veranlagung">Singlehaushalt</label>
-                    <input type="radio" name="veranlagung" id="single">
-                    <label for="veranlagung">Splitting</label>
-                    <input type="radio" name="veranlagung" id="splitting">
+                    <article>
+                        <label for="veranlagung">Singlehaushalt </label>
+                        <input type="radio" name="veranlagung" id="single">
+                        <label for="veranlagung">Splitting</label>
+                        <input type="radio" name="veranlagung" id="splitting">
+                    </article>
                 </section>
                 <section>
-                    <h2></h2>
-                    <label for="einkommen">Einkommen</label>
-                    <input type="number" name="einkommen" id="einkommen" placeholder="Grundeinkommen in Euro">
+                    <h2>Einkommen</h2>
+                    <label for="einkommen" hidden>Einkommen</label>
+                    <input type="number" name="einkommen" id="einkommen" placeholder="Grundeinkommen in €">
                     <input type="submit" value="Berechnen" id="berechnen" onclick="calculate()">
                 </section>
                 <hr>
                 <section>
-                    <h2>Zu versteuerdes Einkommen</h2>
-                    <p id="zvE" class="result">test</p>
+                    <h2>Zu versteuerndes Einkommen</h2>
+                    <p id="zvE" class="result">0,00</p>
                     <h2>Einkommenssteuer</h2>
-                    <p id="ESt" class="result">test</p>
+                    <p id="ESt" class="result">0,00</p>
                 </section>
             </fieldset>
         </form>
