@@ -42,11 +42,17 @@ h2{
 
 #berechnen{
     margin: 1rem;
+    font-size: 1rem;
     color: #EAEAEA;
     background-color: #00ABB3;
     border: none;
     padding: 1rem 2.5rem;
     border-radius: 8px;
+}
+
+#berechnen:hover{
+    background-color: #037379;
+    cursor: pointer;
 }
 
 .result{
