@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_Einkommenssteuerrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Einkommenssteuerrechner</h1>
+        <form onsubmit="return false">
+            <fieldset>
+                <section>
+                    <h2>Jahr</h2>
+                    <select name="year" id="yearList">
+                        <option value="0">2022</option>
+                        <option value="1">2021</option>
+                        <option value="2">2020</option>
+                    </select>
+                </section>
+                <section>
+                    <h2>Art der Veranlagung</h2>
+                    <label for="veranlagung">Singlehaushalt</label>
+                    <input type="radio" name="veranlagung" id="single">
+                    <label for="veranlagung">Splitting</label>
+                    <input type="radio" name="veranlagung" id="splitting">
+                </section>
+                <section>
+                    <h2></h2>
+                    <label for="einkommen">Einkommen</label>
+                    <input type="text" name="einkommen" id="einkommen" placeholder="Grundeinkommen in Euro">
+                    <input type="submit" value="Berechnen" id="berechnen">
+                </section>
+                <hr>
+                <section>
+                    <h2>Zu versteuerdes Einkommen</h2>
+                    <p id="zvE" class="result">test</p>
+                    <h2>Einkommenssteuer</h2>
+                    <p id="einkommenssteuer" class="result">test</p>
+                </section>
+            </fieldset>
+        </form>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
