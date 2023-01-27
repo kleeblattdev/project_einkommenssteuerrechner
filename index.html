@@ -30,15 +30,15 @@
                 <section>
                     <h2></h2>
                     <label for="einkommen">Einkommen</label>
-                    <input type="text" name="einkommen" id="einkommen" placeholder="Grundeinkommen in Euro">
-                    <input type="submit" value="Berechnen" id="berechnen">
+                    <input type="number" name="einkommen" id="einkommen" placeholder="Grundeinkommen in Euro">
+                    <input type="submit" value="Berechnen" id="berechnen" onclick="calculate()">
                 </section>
                 <hr>
                 <section>
                     <h2>Zu versteuerdes Einkommen</h2>
                     <p id="zvE" class="result">test</p>
                     <h2>Einkommenssteuer</h2>
-                    <p id="einkommenssteuer" class="result">test</p>
+                    <p id="ESt" class="result">test</p>
                 </section>
             </fieldset>
         </form>
